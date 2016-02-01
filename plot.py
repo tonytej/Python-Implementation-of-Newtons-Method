@@ -9,13 +9,13 @@ def gradient(function, xvalue):
 def tangentline_equation(function, xvalue):
 	x = symbols('x')
 	function = sympify(function)
-	print function
 	yvalue = function.subs(x, xvalue)
-	print yvalue
 	m = gradient(function, xvalue)
-	print m
 	equation = (m * x - m * xvalue) + yvalue
 	return equation
+
+def newton(function, xstart):
+	pass
 
 
 function = "x**2 + 1"
